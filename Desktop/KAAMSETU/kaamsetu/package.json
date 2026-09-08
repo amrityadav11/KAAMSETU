@@ -1,0 +1,15 @@
+{
+    "name": "kaamsetu",
+    "version": "1.0.0",
+    "description": "KaamSetu — MERN SaaS for Indian local businesses",
+    "scripts": {
+        "client": "npm run dev --prefix client",
+        "server": "npm run dev --prefix server",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "seed": "npm run seed --prefix server",
+        "install:all": "npm install --prefix client && npm install --prefix server"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

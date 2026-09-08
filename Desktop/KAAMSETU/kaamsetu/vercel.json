@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build --prefix client",
+  "outputDirectory": "client/dist",
+  "env": {
+    "VITE_API_URL": "@kaamsetu_api_url"
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "status": 404,
+      "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
